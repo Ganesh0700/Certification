@@ -3,69 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ganesh Bramhane | Certificate Showcase</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <section>
-            <h1>Certificate Of C Programming Language</h1>
-            <img src="coding seekho certificate _20250818_141710_0000_250822_223900_1.jpg" alt="">
-        </section>
-        <section>
-            <h1>Certificate Of C++ Programming Language</h1>
-            <img src="coding seekho certificate _20250818_141710_0000_250822_223900_2.jpg" alt="">
-        </section>
-        <section>
-            <h1>Certificate Of DSA Programming Language</h1>
-            <img src="coding seekho certificate _20250818_141710_0000_250822_223900_3.jpg" alt="">
-        </section>
-        <section>
-            <h1>Certificate Of JAVA Programming Language</h1>
-            <img src="coding seekho certificate _20250818_141710_0000_250822_223900_5.jpg" alt="">
-        </section>
-        <section>
-            <h1>Certificate Of Python Programming Language</h1>
-            <img src="coding seekho certificate _20250818_141710_0000_250822_223900_6.jpg" alt="">
-        </section>
-        <section>
-            <h1>Certificate Of Full Stack Development</h1>
-            <img src="coding seekho certificate _20250818_141710_0000_250822_223900_8.jpg" alt="">
-        </section>
-        <section>
-            <h1>Certificate Of MERN Stack Development</h1>
-            <img src="coding seekho certificate _20250818_141710_0000_250822_223900_7.jpg" alt="">
-        </section>
-        <section>
-            <h1>Certificate Of HTML, CSS, JAVASCRIPT</h1>
-            <img src="coding seekho certificate _20250818_141710_0000_250822_223900_4.jpg" alt="">
-        </section>
-        <section>
-            <h1>Certificate Of Internship</h1>
-            <img src="inter certficate.jpg" alt="">
-        </section>
-    </div>
+    <header style="text-align:center; padding: 32px 0 12px 0;">
+        <h1 style="margin:0; color:#fff; font-size:2.2rem;">Ganesh Bramhane</h1>
+        <p style="margin:8px 0 0 0; color:#e3e9fa; font-size:1.1rem;">Welcome to my Certificate Portfolio</p>
+    </header>
+    <main>
+        <div class="container">
+            <section style="grid-column: 1/-1; background: transparent; box-shadow:none; align-items:flex-start;">
+                <p style="color:#fff; font-size:1.1rem; margin-bottom: 12px;">
+                    Hi, my name is <strong>Ganesh Bramhane</strong>.<br>
+                    Below is a list of my certificates. Click on any certificate to view it in detail.
+                </p>
+                <ul style="color:#fff; font-size:1.5rem; margin-left: 18px;">
+                    <li><a href="#c-programming">Certificate Of C Programming Language</a></li>
+                    <li><a href="#c-++">Certificate Of C++ Programming Language</a></li>
+                    <li><a href="#dsa">Certificate Of DSA Programming Language</a></li>
+                    <li><a href="#java">Certificate Of JAVA Programming Language</a></li>
+                    <li><a href="#python">Certificate Of Python Programming Language</a></li>
+                    <li><a href="#full-stack">Certificate Of Full Stack Development</a></li>
+                    <li><a href="#mern-stack">Certificate Of MERN Stack Development</a></li>
+                    <li><a href="#frontend-development">Certificate Of HTML, CSS, JAVASCRIPT</a></li>
+                    <li><a href="#internship">Certificate Of Internship</a></li>
+                </ul>
+            </section>
+            <section id="c-programming">
+                <h1>Certificate Of C Programming Language</h1>
+                <img src="coding seekho certificate _20250818_141710_0000_250822_223900_1.jpg" alt="C Programming Certificate">
+            </section>
+            <section id="c-++">
+                <h1>Certificate Of C++ Programming Language</h1>
+                <img src="coding seekho certificate _20250818_141710_0000_250822_223900_2.jpg" alt="C++ Programming Certificate">
+            </section>
+            <section id="dsa">
+                <h1>Certificate Of DSA Programming Language</h1>
+                <img src="coding seekho certificate _20250818_141710_0000_250822_223900_3.jpg" alt="DSA Certificate">
+            </section>
+            <section id="java">
+                <h1>Certificate Of JAVA Programming Language</h1>
+                <img src="coding seekho certificate _20250818_141710_0000_250822_223900_5.jpg" alt="Java Certificate">
+            </section>
+            <section id="python">
+                <h1>Certificate Of Python Programming Language</h1>
+                <img src="coding seekho certificate _20250818_141710_0000_250822_223900_6.jpg" alt="Python Certificate">
+            </section>
+            <section id="full-stack">
+                <h1>Certificate Of Full Stack Development</h1>
+                <img src="coding seekho certificate _20250818_141710_0000_250822_223900_8.jpg" alt="Full Stack Development Certificate">
+            </section>
+            <section id="mern-stack">
+                <h1>Certificate Of MERN Stack Development</h1>
+                <img src="coding seekho certificate _20250818_141710_0000_250822_223900_7.jpg" alt="MERN Stack Development Certificate">
+            </section>
+            <section id="frontend-development">
+                <h1>Certificate Of HTML, CSS, JAVASCRIPT</h1>
+                <img src="coding seekho certificate _20250818_141710_0000_250822_223900_4.jpg" alt="Frontend Development Certificate">
+            </section>
+            <section id="internship">
+                <h1>Certificate Of Internship</h1>
+                <img src="inter certficate.jpg" alt="Internship Certificate">
+            </section>
+        </div>
+    </main>
+    <!-- Modal for enlarged certificate view -->
     <div id="modal" class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" id="modal-img">
+      <span class="close" title="Close">&times;</span>
+      <img class="modal-content" id="modal-img" alt="Enlarged Certificate">
       <div id="caption"></div>
     </div>
+    <footer style="text-align:center; color:#e3e9fa; margin: 32px 0 12px 0; font-size:0.95rem;">
+        &copy; 2025 Ganesh Bramhane. All rights reserved.
+    </footer>
     <script>
-document.querySelectorAll('section img').forEach(img => {
-    img.onclick = function() {
-        document.getElementById('modal').style.display = "block";
-        document.getElementById('modal-img').src = this.src;
-        document.getElementById('caption').innerText = this.previousElementSibling.innerText;
-    }
-});
-document.querySelector('.close').onclick = function() {
-    document.getElementById('modal').style.display = "none";
-};
-window.onclick = function(event) {
-    if (event.target == document.getElementById('modal')) {
+    // Enhance modal functionality and accessibility
+    document.querySelectorAll('section img').forEach(img => {
+        img.style.cursor = "pointer";
+        img.setAttribute('tabindex', '0');
+        img.setAttribute('title', 'Click to enlarge');
+        img.onclick = function() {
+            document.getElementById('modal').style.display = "block";
+            document.getElementById('modal-img').src = this.src;
+            document.getElementById('modal-img').alt = this.alt;
+            document.getElementById('caption').innerText = this.previousElementSibling.innerText;
+        }
+        img.onkeydown = function(e) {
+            if (e.key === "Enter" || e.key === " ") {
+                this.click();
+            }
+        }
+    });
+    document.querySelector('.close').onclick = function() {
         document.getElementById('modal').style.display = "none";
-    }
-};
-</script>
+    };
+    window.onclick = function(event) {
+        if (event.target == document.getElementById('modal')) {
+            document.getElementById('modal').style.display = "none";
+        }
+    };
+    window.onkeydown = function(event) {
+        if (event.key === "Escape") {
+            document.getElementById('modal').style.display = "none";
+        }
+    };
+    </script>
 </body>
 </html>
