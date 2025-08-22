@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section>
+            <h1>Certificate Of C Programming Language</h1>
+            <img src="coding seekho certificate _20250818_141710_0000_250822_223900_1.jpg" alt="">
+        </section>
+        <section>
+            <h1>Certificate Of C++ Programming Language</h1>
+            <img src="coding seekho certificate _20250818_141710_0000_250822_223900_2.jpg" alt="">
+        </section>
+        <section>
+            <h1>Certificate Of DSA Programming Language</h1>
+            <img src="coding seekho certificate _20250818_141710_0000_250822_223900_3.jpg" alt="">
+        </section>
+        <section>
+            <h1>Certificate Of JAVA Programming Language</h1>
+            <img src="coding seekho certificate _20250818_141710_0000_250822_223900_5.jpg" alt="">
+        </section>
+        <section>
+            <h1>Certificate Of Python Programming Language</h1>
+            <img src="coding seekho certificate _20250818_141710_0000_250822_223900_6.jpg" alt="">
+        </section>
+        <section>
+            <h1>Certificate Of Full Stack Development</h1>
+            <img src="coding seekho certificate _20250818_141710_0000_250822_223900_8.jpg" alt="">
+        </section>
+        <section>
+            <h1>Certificate Of MERN Stack Development</h1>
+            <img src="coding seekho certificate _20250818_141710_0000_250822_223900_7.jpg" alt="">
+        </section>
+        <section>
+            <h1>Certificate Of HTML, CSS, JAVASCRIPT</h1>
+            <img src="coding seekho certificate _20250818_141710_0000_250822_223900_4.jpg" alt="">
+        </section>
+        <section>
+            <h1>Certificate Of Internship</h1>
+            <img src="inter certficate.jpg" alt="">
+        </section>
+    </div>
+    <div id="modal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-img">
+      <div id="caption"></div>
+    </div>
+    <script>
+document.querySelectorAll('section img').forEach(img => {
+    img.onclick = function() {
+        document.getElementById('modal').style.display = "block";
+        document.getElementById('modal-img').src = this.src;
+        document.getElementById('caption').innerText = this.previousElementSibling.innerText;
+    }
+});
+document.querySelector('.close').onclick = function() {
+    document.getElementById('modal').style.display = "none";
+};
+window.onclick = function(event) {
+    if (event.target == document.getElementById('modal')) {
+        document.getElementById('modal').style.display = "none";
+    }
+};
+</script>
+</body>
+</html>
